@@ -1,0 +1,58 @@
+#mainheader
+	a
+		+retina-image("gleediator", 154px, 154px, no-repeat)
+		+hide-text
+		width: 154px
+		height: 154px
+		display: block
+		margin: 0 auto
+
+#mainvideo
+	margin: 30px 0
+	text-align: center
+	position: relative
+
+	h1
+		top: 200px
+		left: 350px
+		position: absolute
+		z-index: 2
+
+.videobox
+	+opacity(0.5)
+	z-index: 1
+	width: 950px
+	height: 537px
+	border: solid 5px $color-softdark
+	overflow: hidden
+
+#navigation
+	ul
+		margin: 0 0 30px 0
+		padding: 0
+		overflow: hidden
+
+	li
+		width: 300px
+		float: left
+		list-style: none
+		margin: 0 0 0 30px
+		&:first-child
+			margin-left: 0
+
+		a
+			display: block
+			padding: 30px
+			text-align: center
+			text-transform: uppercase
+			background: $color-softdark
+			&:hover
+				background: #fff
+
+footer
+	color: #747373
+	margin-bottom: 50px
+	p
+		text-align: center
+		text-transform: uppercase
+		font-size: 12px
