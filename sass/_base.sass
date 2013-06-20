@@ -1,0 +1,49 @@
+// Base
+
+// Variables
+$fontTitle: 'IM Fell DW Pica SC', serif
+$fontText: 'Jacques Francois', serif
+$fontSans: 'Signika Negative', sans-serif
+$grey: #333
+$blue: #77b8e8
+
+$default-font-size: 16px
+$default-radius: 5px
+
+::-moz-selection
+	background: $blue
+	color: #111
+	text-shadow: none
+
+::selection
+	background: $blue
+	color: #111
+	text-shadow: none
+
+body
+	margin: 0
+
+a
+	text-decoration: none
+
+h1, h2, h3
+	font-family: $fontTitle
+	line-height: 1
+	font-weight: normal
+
+h1
+	margin: 40px 0
+	font-size: emCalc(40px)
+	text-align: center
+
+h2
+	margin: 30px 0
+	font-size: emCalc(30px)
+
+h3
+	margin: 25px 0
+	font-size: emCalc(25px)
+
+.wrap
+	max-width: 940px
+	margin: 0 auto
