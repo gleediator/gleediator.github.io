@@ -1,17 +1,14 @@
 .full-image {
 	width: 100%;
-	max-height: 1000px;
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 1;
 	overflow: hidden;
-	img{ @extend %fleximage;}
+	img{ @extend %fleximage; height: 100%;}
 }
 
 .mainheader {
-	height: 1000px;
-	overflow: hidden;
 	hgroup, nav {
 		z-index: 2;
 		position: relative;
@@ -40,6 +37,7 @@
 	font-family: $fontText;
 	font-size: emCalc(16px);
 	padding: 10px 0;
+	text-align: center;
 	a {@extend %btn-green;&:hover {background: red;}}
 }
 
