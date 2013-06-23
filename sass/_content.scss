@@ -10,14 +10,16 @@
 }
 
 .mainheader {
-	hgroup, nav {
+	hgroup, nav, .pop {
 		z-index: 2;
 		position: relative;
-		margin-top: 35px;
+		margin-top: 50px;
 		text-align: center;
 		color: #fff;
 	}
-	h1 {font-size: emCalc(50px);
+	h1 {
+		font-size: emCalc(50px);
+		margin: emCalc(30px, 50px) 0;
 		span {font-size: emCalc(18px,50px); font-family: $fontText; font-weight: normal;}
 	}
 	h2 {font-size: emCalc(20px); letter-spacing: 0.1em;}
@@ -49,6 +51,14 @@
 	z-index: 20;
 	position: relative;
 }
+
+.pop {
+	@include border-radius(5px);
+	@extend .wrap;
+	font-family: $fontTitle;
+	font-size: emCalc(20px);
+}
+
 article {
 	p{
 		font-family: $fontText;
