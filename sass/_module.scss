@@ -34,6 +34,14 @@
 	}
 }
 
+%thumb {
+	@include border-radius(50%);
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	img {@extend %fleximage;}
+}
+
 //%circle {
 //	width: emCalc(40px, 24px);
 //	height: emCalc(40px, 24px);

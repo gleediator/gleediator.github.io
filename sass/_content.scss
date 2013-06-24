@@ -1,68 +1,42 @@
-.full-image {
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	overflow: hidden;
-	background: #000;
-	img{ @extend %fleximage; height: 100%;}
-}
-
-.mainheader {
-	hgroup, nav, .pop {
-		z-index: 2;
-		position: relative;
-		margin-top: 50px;
-		text-align: center;
-		color: #fff;
-	}
-	h1 {
-		font-size: emCalc(50px);
-		margin: emCalc(30px, 50px) 0;
-		span {font-size: emCalc(18px,50px); font-family: $fontText; font-weight: normal;}
-	}
-	h2 {font-size: emCalc(20px); letter-spacing: 0.1em;}
-	nav {margin: 0 0 0 emCalc(-20px); text-align: center;
-		ul {display: inline-block;}
-		li {@extend %clear-list; float: left; margin-left: emCalc(20px);}
-		a {@extend %btn-red;}
-	}
-}
-
-.fixedbox {
-	width: 100%;
-	background: black;
-	position: fixed;
-	bottom: 0;
-	z-index: 2;
-	color: #fff;
-	font-family: $fontText;
-	font-size: emCalc(16px);
-	padding: 10px 0;
-	text-align: center;
-	a {@extend %btn-green;&:hover {background: red;}}
-}
-
 .story {
 	@extend .wrap;
 	padding: 30px 50px;
+	margin-bottom: 130px;
 	background: #fff;
-	z-index: 20;
+	z-index: 2;
 	position: relative;
-}
-
-.pop {
-	@include border-radius(5px);
-	@extend .wrap;
-	font-family: $fontTitle;
-	font-size: emCalc(20px);
 }
 
 article {
 	p{
 		font-family: $fontText;
 		font-size: 20px;
-		line-height: 25px;
+		line-height: 30px;
+	}
+	h1 span {
+		font-family: $fontText;
+		font-size: emCalc(18px, 40px);
+		display: block;
+		font-style: italic;
+		margin-top: emCalc(20px, 16px);
+	}
+}
+.aboutme {
+	display: none;
+	&.show{ display: block; }
+}
+
+.ivana {
+	float: left;
+	margin-right: 25px;
+	position: relative;
+	&:hover { .myweb {display: block;} }
+	a {
+		@extend %thumb;
+		display: block;
+		&:hover {
+			@include opacity(0.5);
+			span {display: block;}
+		}
 	}
 }

@@ -1,0 +1,42 @@
+// homepage styling
+.mainheader {
+	hgroup, nav, .inprogress {
+		z-index: 2;
+		position: relative;
+		margin-top: 50px;
+		text-align: center;
+		color: #fff;
+	}
+	h1 {
+		font-size: emCalc(50px);
+		margin: emCalc(30px, 50px) 0;
+		span {font-size: emCalc(18px,50px); font-family: $fontText; font-weight: normal;}
+	}
+	h2 {font-size: emCalc(20px); letter-spacing: 0.1em;}
+	nav {margin: 0 0 0 emCalc(-20px); text-align: center;
+		ul {display: inline-block;}
+		li {@extend %clear-list; float: left; margin-left: emCalc(20px);}
+		a {@extend %btn-red;}
+	}
+}
+
+.fixedbox {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	bottom: 0;
+	z-index: 2;
+	color: #fff;
+	font-family: $fontText;
+	font-size: emCalc(16px);
+	padding: 10px 0;
+	text-align: center;
+	a {@extend %btn-green;&:hover {background: red;}}
+}
+
+.inprogress {
+	@include border-radius(5px);
+	@extend .wrap;
+	font-family: $fontTitle;
+	font-size: emCalc(20px);
+}
