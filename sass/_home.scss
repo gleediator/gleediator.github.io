@@ -13,7 +13,7 @@
 		span {font-size: emCalc(18px,50px); font-family: $fontText; font-weight: normal;}
 	}
 	h2 {font-size: emCalc(20px); letter-spacing: 0.1em;}
-	nav {margin: 0 0 0 emCalc(-20px); text-align: center;
+	nav {margin: 0 0 emCalc(25px) emCalc(-20px); text-align: center;
 		ul {display: inline-block;}
 		li {@extend %clear-list; float: left; margin-left: emCalc(20px);}
 		a {@extend %btn-red;}

@@ -5,6 +5,7 @@
 	background: #fff;
 	z-index: 2;
 	position: relative;
+	li {font-size: emCalc(18px); line-height: emCalc(32px);}
 }
 
 article {
@@ -21,10 +22,6 @@ article {
 		margin-top: emCalc(20px, 16px);
 	}
 }
-.aboutme {
-	display: none;
-	&.show{ display: block; }
-}
 
 .ivana {
 	float: left;
@@ -34,6 +31,7 @@ article {
 	a {
 		@extend %thumb;
 		display: block;
+		outline: none;
 		&:hover {
 			@include opacity(0.5);
 			span {display: block;}
