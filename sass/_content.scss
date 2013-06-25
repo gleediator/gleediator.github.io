@@ -40,3 +40,9 @@ article {
 		}
 	}
 }
+
+span.note {
+	@include opacity(0.7);
+	font-size: emCalc(14px);
+	font-style: italic;
+}

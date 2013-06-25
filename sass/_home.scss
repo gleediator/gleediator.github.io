@@ -29,7 +29,7 @@
 	color: #fff;
 	font-family: $fontText;
 	font-size: emCalc(16px);
-	padding: 10px 0;
+	padding: 5px 0;
 	text-align: center;
 	a {@extend %btn-green;&:hover {background: red;}}
 }
