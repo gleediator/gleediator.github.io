@@ -14,7 +14,7 @@
 	}
 	h2 {font-size: emCalc(20px); letter-spacing: 0.1em;}
 	nav {margin: 0 0 emCalc(25px) emCalc(-20px); text-align: center;
-		ul {display: inline-block;}
+		ul {display: inline-block; padding: 0;}
 		li {@extend %clear-list; float: left; margin-left: emCalc(20px);}
 		a {@extend %btn-red;}
 	}
@@ -32,6 +32,7 @@
 	padding: 5px 0;
 	text-align: center;
 	a {@extend %btn-green;&:hover {background: red;}}
+	p {line-height: 35px;}
 }
 
 .inprogress {
