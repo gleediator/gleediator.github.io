@@ -21,6 +21,11 @@
 		li {@extend %clear-list; float: left; margin-left: emCalc(20px);}
 		a {@extend %btn-red;}
 	}
+	@media screen and (max-width: 500px) {
+		h1 span {display: block;}
+		h2 {display: none;}
+		nav li {float: none; margin-bottom: 10px;}
+	}
 }
 
 .fixedbox {
