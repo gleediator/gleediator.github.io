@@ -36,6 +36,9 @@
 	text-align: center;
 	a {@extend %btn-green;&:hover {background: red;}}
 	p {line-height: 35px;}
+	@media screen and (max-width: 500px) {
+		display: none;
+	}
 }
 
 .inprogress {
