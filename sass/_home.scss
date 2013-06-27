@@ -22,6 +22,7 @@
 		a {@extend %btn-red;}
 	}
 	@media screen and (max-width: 500px) {
+		hgroup {margin-top: 20px;}
 		h1 {margin: emCalc(15px, 50px) 0;
 			span {display: block;}}
 		h2 {display: none;}
