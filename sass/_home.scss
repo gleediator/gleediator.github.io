@@ -22,9 +22,11 @@
 		a {@extend %btn-red;}
 	}
 	@media screen and (max-width: 500px) {
-		h1 span {display: block;}
+		h1 {margin: emCalc(15px, 50px) 0;
+			span {display: block;}}
 		h2 {display: none;}
-		nav li {float: none; margin-bottom: 10px;}
+		nav { margin-bottom: 10px;
+			li {float: none; margin-bottom: 10px;}}
 	}
 }
 
